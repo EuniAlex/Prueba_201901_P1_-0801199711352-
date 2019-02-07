@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "4ad7bb6c-e8bc-46b3-93fe-d3abbc9ec762",
+		"name": "Prueba2019_01_0801199711352",
+		"description": "Prueba de Seminario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/videos/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/videos/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"videos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/videos/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "empresa",
+							"value": "ESPN",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "youtube/superBowl/85542",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Pepsi",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2017",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/videos/new",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"videos",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
