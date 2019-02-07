@@ -23,7 +23,7 @@ router.get('/', function(req,res,next){
                 info=[];
                 return res.status(500).json({'error':'Murio'})
             }
-            data = JSON.parse(fileinfo);
+            info = JSON.parse(fileinfo);
             return res.status(200).json(info);
         });
     }else{
